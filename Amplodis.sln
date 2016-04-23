@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amplodis", "Amplodis\Amplodis.csproj", "{6812DA56-C964-48B7-9044-CD2F9D00F733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBWrapper", "DBWrapper\DBWrapper.csproj", "{3267797E-415D-4B3D-BB06-1FD7BA27C0CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessWrapper", "BusinessWrapper\BusinessWrapper.csproj", "{F7B0655E-FFA1-4887-90D4-8052AA31A21D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6812DA56-C964-48B7-9044-CD2F9D00F733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6812DA56-C964-48B7-9044-CD2F9D00F733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6812DA56-C964-48B7-9044-CD2F9D00F733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6812DA56-C964-48B7-9044-CD2F9D00F733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3267797E-415D-4B3D-BB06-1FD7BA27C0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3267797E-415D-4B3D-BB06-1FD7BA27C0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3267797E-415D-4B3D-BB06-1FD7BA27C0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3267797E-415D-4B3D-BB06-1FD7BA27C0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7B0655E-FFA1-4887-90D4-8052AA31A21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B0655E-FFA1-4887-90D4-8052AA31A21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B0655E-FFA1-4887-90D4-8052AA31A21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B0655E-FFA1-4887-90D4-8052AA31A21D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

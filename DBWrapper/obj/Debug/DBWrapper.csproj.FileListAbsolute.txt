@@ -1,0 +1,13 @@
+D:\Old project\AVSK_Technology\DBWrapper\bin\Debug\DBWrapper.dll
+D:\Old project\AVSK_Technology\DBWrapper\bin\Debug\DBWrapper.pdb
+D:\Old project\AVSK_Technology\DBWrapper\obj\Debug\DBWrapper.csprojResolveAssemblyReference.cache
+D:\Old project\AVSK_Technology\DBWrapper\obj\Debug\DBWrapper.dll
+D:\Old project\AVSK_Technology\DBWrapper\obj\Debug\DBWrapper.pdb
+D:\Old project\My Project\AVSKTechnology\DBWrapper\bin\Debug\DBWrapper.dll
+D:\Old project\My Project\AVSKTechnology\DBWrapper\bin\Debug\DBWrapper.pdb
+D:\Old project\My Project\AVSKTechnology\DBWrapper\obj\Debug\DBWrapper.dll
+D:\Old project\My Project\AVSKTechnology\DBWrapper\obj\Debug\DBWrapper.pdb
+D:\Old project\My Project\Amplodis\DBWrapper\bin\Debug\DBWrapper.dll
+D:\Old project\My Project\Amplodis\DBWrapper\bin\Debug\DBWrapper.pdb
+D:\Old project\My Project\Amplodis\DBWrapper\obj\Debug\DBWrapper.dll
+D:\Old project\My Project\Amplodis\DBWrapper\obj\Debug\DBWrapper.pdb

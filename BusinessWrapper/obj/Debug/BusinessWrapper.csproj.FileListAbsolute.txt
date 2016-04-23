@@ -1,0 +1,28 @@
+D:\Old project\AVSK_Technology\BusinessWrapper\obj\Debug\BusinessWrapper.csprojResolveAssemblyReference.cache
+D:\Old project\AVSK_Technology\BusinessWrapper\bin\Debug\BusinessWrapper.dll
+D:\Old project\AVSK_Technology\BusinessWrapper\bin\Debug\BusinessWrapper.pdb
+D:\Old project\AVSK_Technology\BusinessWrapper\bin\Debug\DBWrapper.dll
+D:\Old project\AVSK_Technology\BusinessWrapper\bin\Debug\DBWrapper.pdb
+D:\Old project\AVSK_Technology\BusinessWrapper\obj\Debug\BusinessWrapper.dll
+D:\Old project\AVSK_Technology\BusinessWrapper\obj\Debug\BusinessWrapper.pdb
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\bin\Debug\BusinessWrapper.dll
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\bin\Debug\BusinessWrapper.pdb
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\bin\Debug\DBWrapper.dll
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\bin\Debug\DBWrapper.pdb
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\obj\Debug\BusinessWrapper.csprojResolveAssemblyReference.cache
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\obj\Debug\BusinessWrapper.dll
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\obj\Debug\BusinessWrapper.pdb
+D:\Old project\My Project\Amplodis\BusinessWrapper\bin\Debug\BusinessWrapper.dll
+D:\Old project\My Project\Amplodis\BusinessWrapper\bin\Debug\BusinessWrapper.pdb
+D:\Old project\My Project\Amplodis\BusinessWrapper\bin\Debug\DBWrapper.dll
+D:\Old project\My Project\Amplodis\BusinessWrapper\bin\Debug\DBWrapper.pdb
+D:\Old project\My Project\Amplodis\BusinessWrapper\obj\Debug\BusinessWrapper.csprojResolveAssemblyReference.cache
+D:\Old project\My Project\Amplodis\BusinessWrapper\obj\Debug\BusinessWrapper.dll
+D:\Old project\My Project\Amplodis\BusinessWrapper\obj\Debug\BusinessWrapper.pdb
+D:\Sumit\Work\amplodis\siteDynamic\Amplodis\BusinessWrapper\bin\Debug\BusinessWrapper.dll
+D:\Sumit\Work\amplodis\siteDynamic\Amplodis\BusinessWrapper\bin\Debug\BusinessWrapper.pdb
+D:\Sumit\Work\amplodis\siteDynamic\Amplodis\BusinessWrapper\bin\Debug\DBWrapper.dll
+D:\Sumit\Work\amplodis\siteDynamic\Amplodis\BusinessWrapper\bin\Debug\DBWrapper.pdb
+D:\Sumit\Work\amplodis\siteDynamic\Amplodis\BusinessWrapper\obj\Debug\BusinessWrapper.csprojResolveAssemblyReference.cache
+D:\Sumit\Work\amplodis\siteDynamic\Amplodis\BusinessWrapper\obj\Debug\BusinessWrapper.dll
+D:\Sumit\Work\amplodis\siteDynamic\Amplodis\BusinessWrapper\obj\Debug\BusinessWrapper.pdb

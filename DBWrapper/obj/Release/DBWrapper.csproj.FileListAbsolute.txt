@@ -1,0 +1,4 @@
+D:\Old project\My Project\AVSKTechnology\DBWrapper\bin\Release\DBWrapper.dll
+D:\Old project\My Project\AVSKTechnology\DBWrapper\bin\Release\DBWrapper.pdb
+D:\Old project\My Project\AVSKTechnology\DBWrapper\obj\Release\DBWrapper.dll
+D:\Old project\My Project\AVSKTechnology\DBWrapper\obj\Release\DBWrapper.pdb

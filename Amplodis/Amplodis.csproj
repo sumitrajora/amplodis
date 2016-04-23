@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6812DA56-C964-48B7-9044-CD2F9D00F733}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Amplodis</RootNamespace>
+    <AssemblyName>Amplodis</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.1\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DesktopApplication.html" />
+    <Content Include="PrintMedia.html" />
+    <Content Include="EBusiness.html" />
+    <Content Include="SEO.html" />
+    <Content Include="MobileDevelopment.html" />
+    <Content Include="UIDevelopment.html" />
+    <Content Include="WebDevelopment.html" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="about-us.html" />
+    <Content Include="amplodis-services.html" />
+    <Content Include="AmplodisBlog\Amplodis-forum-detail.aspx" />
+    <Content Include="AmplodisBlog\amplodis-forum.aspx" />
+    <Content Include="AmplodisBlog\Amplodis-Manage-Blog.aspx" />
+    <Content Include="AmplodisBlog\tiny_mce\langs\en.js" />
+    <Content Include="AmplodisBlog\tiny_mce\license.txt" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advhr\css\advhr.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advhr\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advhr\js\rule.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advhr\rule.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advimage\css\advimage.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advimage\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advimage\image.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advimage\img\sample.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advimage\js\image.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advlink\css\advlink.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advlink\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advlink\js\advlink.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advlink\link.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advlist\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\advlist\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\autolink\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\autolink\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\autoresize\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\autoresize\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\autosave\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\autosave\langs\en.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\bbcode\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\directionality\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\emotions.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\js\emotions.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\example\dialog.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\example\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\example\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\example\img\example.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\example\js\dialog.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\example\langs\en.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\example\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\example_dependency\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\example_dependency\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\fullpage\css\fullpage.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\fullpage\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\fullpage\fullpage.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\fullpage\js\fullpage.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\iespell\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\inlinepopups\template.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\layer\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\layer\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\legacyoutput\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\legacyoutput\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\lists\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\lists\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\media\css\media.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\media\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\media\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\media\js\embed.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\media\js\media.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\media\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\media\media.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\media\moxieplayer.swf" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\noneditable\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\paste\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\paste\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\paste\js\pastetext.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\paste\js\pasteword.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\paste\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\paste\pastetext.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\paste\pasteword.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\preview\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\preview\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\preview\example.html" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\preview\jscripts\embed.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\preview\preview.html" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\print\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\print\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\save\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\save\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\spellchecker\css\content.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\spellchecker\img\wline.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\style\css\props.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\style\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\style\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\style\js\props.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\style\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\style\props.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\style\readme.txt" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\tabfocus\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\cell.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\css\cell.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\css\row.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\css\table.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\js\cell.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\js\merge_cells.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\js\row.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\js\table.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\merge_cells.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\row.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\table\table.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\template\blank.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\template\css\template.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\template\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\template\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\template\js\template.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\template\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\template\template.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\visualblocks\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\visualblocks\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\visualchars\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\wordcount\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\wordcount\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\del.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="AmplodisBlog\tiny_mce\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\about.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\anchor.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\charmap.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\color_picker.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\editor_template.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\editor_template_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\image.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\img\flash.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\img\icons.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\img\iframe.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\img\pagebreak.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\img\quicktime.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\img\realmedia.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\img\shockwave.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\img\trans.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\img\video.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\img\windowsmedia.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\js\about.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\js\anchor.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\js\charmap.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\js\color_picker.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\js\image.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\js\link.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\js\source_editor.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\langs\en.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\langs\en_dlg.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\link.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\shortcuts.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\default\content.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\default\dialog.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\default\ui.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\highcontrast\content.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\highcontrast\dialog.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\highcontrast\ui.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\advanced\source_editor.htm" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\simple\editor_template.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\simple\editor_template_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\simple\img\icons.gif" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\simple\langs\en.js" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\simple\skins\default\content.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\simple\skins\default\ui.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\simple\skins\o2k7\content.css" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="AmplodisBlog\tiny_mce\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="AmplodisBlog\tiny_mce\tiny_mce.js" />
+    <Content Include="AmplodisBlog\tiny_mce\tiny_mce_popup.js" />
+    <Content Include="AmplodisBlog\tiny_mce\tiny_mce_src.js" />
+    <Content Include="AmplodisBlog\tiny_mce\utils\editable_selects.js" />
+    <Content Include="AmplodisBlog\tiny_mce\utils\form_utils.js" />
+    <Content Include="AmplodisBlog\tiny_mce\utils\mctabs.js" />
+    <Content Include="AmplodisBlog\tiny_mce\utils\validate.js" />
+    <Content Include="css\app-comp.css" />
+    <Content Include="css\customer-comp.css" />
+    <Content Include="css\fonts\27E8BE_0_0.svg" />
+    <Content Include="css\print.css" />
+    <Content Include="css\web-global-ie.css" />
+    <Content Include="css\web-global.css" />
+    <Content Include="default.aspx" />
+    <Content Include="font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="font-awesome\css\font-awesome-ie7.min.css" />
+    <Content Include="font-awesome\css\font-awesome.css" />
+    <Content Include="font-awesome\css\font-awesome.min.css" />
+    <Content Include="font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="images\404_background.jpg" />
+    <Content Include="images\amplodis-logo-big.png" />
+    <Content Include="images\amplodis-logo-icon.png" />
+    <Content Include="images\amplodis-logo-white.png" />
+    <Content Include="images\amplodis-logo.png" />
+    <Content Include="images\blog-no-image.png" />
+    <Content Include="images\icon-no-image.png" />
+    <Content Include="images\icon_clock.png" />
+    <Content Include="images\icon_star.png" />
+    <Content Include="images\images.jpg" />
+    <Content Include="index.html" />
+    <Content Include="packages.config" />
+    <Content Include="Account\Web.config" />
+    <Content Include="css\.DS_Store" />
+    <Content Include="font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="font-awesome\font\FontAwesome.otf" />
+    <Content Include="css\fonts\27E8BE_0_0.eot" />
+    <Content Include="css\fonts\27e8be_0_0.ttf" />
+    <Content Include="css\fonts\27e8be_0_0.woff" />
+    <Content Include="images\.DS_Store" />
+    <Content Include="images\Thumbs.db" />
+    <Content Include="Scripts\html5shiv.min.js" />
+    <Content Include="Scripts\ie-emulation-modes-warning.js" />
+    <Content Include="Scripts\ie8-responsive-file-warning.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\overrides.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <None Include="Properties\PublishProfiles\A.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AmplodisBlog\Amplodis-forum-detail.aspx.cs">
+      <DependentUpon>Amplodis-forum-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AmplodisBlog\Amplodis-forum-detail.aspx.designer.cs">
+      <DependentUpon>Amplodis-forum-detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AmplodisBlog\amplodis-forum.aspx.cs">
+      <DependentUpon>amplodis-forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AmplodisBlog\amplodis-forum.aspx.designer.cs">
+      <DependentUpon>amplodis-forum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AmplodisBlog\Amplodis-Manage-Blog.aspx.cs">
+      <DependentUpon>Amplodis-Manage-Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AmplodisBlog\Amplodis-Manage-Blog.aspx.designer.cs">
+      <DependentUpon>Amplodis-Manage-Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AmplodisMail.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="css\storelocator\" />
+    <Folder Include="images\flags\" />
+    <Folder Include="images\icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessWrapper\BusinessWrapper.csproj">
+      <Project>{f7b0655e-ffa1-4887-90d4-8052aa31a21d}</Project>
+      <Name>BusinessWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBWrapper\DBWrapper.csproj">
+      <Project>{3267797e-415d-4b3d-bb06-1fd7ba27c0ce}</Project>
+      <Name>DBWrapper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54043</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54043/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

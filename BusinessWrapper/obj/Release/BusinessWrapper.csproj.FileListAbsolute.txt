@@ -1,0 +1,14 @@
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\bin\Release\BusinessWrapper.dll
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\bin\Release\BusinessWrapper.pdb
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\bin\Release\DBWrapper.dll
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\bin\Release\DBWrapper.pdb
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\obj\Release\BusinessWrapper.csprojResolveAssemblyReference.cache
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\obj\Release\BusinessWrapper.dll
+D:\Old project\My Project\AVSKTechnology\BusinessWrapper\obj\Release\BusinessWrapper.pdb
+D:\Old project\My Project\Amplodis\BusinessWrapper\bin\Release\BusinessWrapper.dll
+D:\Old project\My Project\Amplodis\BusinessWrapper\bin\Release\BusinessWrapper.pdb
+D:\Old project\My Project\Amplodis\BusinessWrapper\bin\Release\DBWrapper.dll
+D:\Old project\My Project\Amplodis\BusinessWrapper\bin\Release\DBWrapper.pdb
+D:\Old project\My Project\Amplodis\BusinessWrapper\obj\Release\BusinessWrapper.csprojResolveAssemblyReference.cache
+D:\Old project\My Project\Amplodis\BusinessWrapper\obj\Release\BusinessWrapper.dll
+D:\Old project\My Project\Amplodis\BusinessWrapper\obj\Release\BusinessWrapper.pdb
